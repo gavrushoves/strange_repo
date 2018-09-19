@@ -1,4 +1,4 @@
-# Домашка LVL-1 gavrushov-web.ru/course/les-1
+# Домашка LVL-1 http://gavrushov-web.ru/course/les-1/
 
 ### Подготовка: 
   * установить git ;
