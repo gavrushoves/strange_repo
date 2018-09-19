@@ -1,0 +1,61 @@
+html {
+  font-size: 10px; }
+
+.container {
+  width: 120rem; }
+
+h1 {
+  color: #40946c;
+  font-size: 3rem;
+  text-align: center; }
+
+h2 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.7rem;
+  color: #4D89AF;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.poems {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.poem {
+  width: 30%;
+  color: #4343D5;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 3rem; }
+
+span {
+  color: red; }
+
+.list {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem; }
+
+ol {
+  margin-left: 5rem;
+  margin-bottom: 1rem; }
+
+ol, li {
+  font-size: 2rem; }
+
+a {
+  text-decoration: none; }
+
+.page-2 {
+  text-align: center; }
+
+.copy {
+  color: black;
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: block; }
