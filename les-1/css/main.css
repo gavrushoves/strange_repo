@@ -22,10 +22,15 @@ h3 {
   text-align: center; }
 
 .poems {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .poem {
   margin: 0 1rem;
@@ -37,13 +42,25 @@ h3 {
   max-height: 35rem;
   background-color: #B4C1C2;
   box-shadow: 1px 2px 6px #4B45C9; }
+  .poem__1 {
+    font-family: Pacifico; }
+  .poem__2 {
+    font-family: Caveat;
+    font-size: 2rem; }
+  .poem__3 {
+    font-family: Marck Script;
+    font-size: 2rem; }
 
 span {
   color: red; }
 
 .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 3rem; }
 
 ol {
