@@ -166,7 +166,7 @@ html {
   padding-bottom: 1.5rem;
   background-color: #EBE9B2; }
   .nav li {
-    width: 15%;
+    width: 6%;
     font-size: 1.5rem;
     background-color: #259591; }
     .nav li a {
@@ -278,3 +278,39 @@ html {
           align-items: center;
   font-size: 2rem;
   font-weight: 600; }
+
+@media (max-width: 1200px) and (min-width: 850px) {
+  .second-blocks {
+    height: 20rem; }
+    .second-blocks-2 {
+      height: 40rem; } }
+@media (max-width: 849px) and (min-width: 600px) {
+  .second-blocks {
+    height: 15rem; }
+    .second-blocks-2 {
+      height: 30rem; }
+
+  .third-layout {
+    height: 55rem; }
+
+  .nav li {
+    width: 10%; } }
+@media (max-width: 599px) {
+  .second-blocks {
+    height: 10rem; }
+    .second-blocks-2 {
+      height: 20rem; }
+
+  .third-layout {
+    height: 35rem; }
+
+  .nav li {
+    width: 15%; } }
+@media (max-width: 480px) {
+  .second-blocks {
+    height: 7rem; }
+    .second-blocks-2 {
+      height: 14rem; }
+
+  .third-layout {
+    height: 25rem; } }
