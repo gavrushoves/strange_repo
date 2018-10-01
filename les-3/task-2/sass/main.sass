@@ -1,0 +1,103 @@
+html, body
+	font-size: 10px
+
+.container
+	max-width: 120rem	
+	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.block
+	background-color: #aeaeae
+	height: 10rem
+	flex: 1 1 10%
+	&-1, &-2
+		height: 7rem
+		margin-bottom: 4rem
+		margin-top: 4rem
+	&-4, &-5, &-6
+		flex: 0 1 30%
+		height: 15rem	
+	&-1
+		flex: 0 1 30%
+		// background-color: red
+		background: url(../img/img-1.jpg) center center no-repeat
+		background-size: cover	
+	&-2
+		flex: 0 1 68%
+		// background-color: #A9700E
+		background: url(../img/img-2.jpg) center center no-repeat
+		background-size: cover
+	&-3
+		flex: 0 1 100%
+		// background-color: #1CC530
+		background: url(../img/img-3.jpg) center center no-repeat
+		background-size: cover
+		height: 25rem
+		margin-bottom: 4rem
+	&-4
+		// background-color: #C5853B
+		background: url(../img/img-4.jpg) center center no-repeat
+		background-size: cover
+	&-5
+		// background-color: #3F48B8
+		background: url(../img/img-5.jpg) center center no-repeat
+		background-size: cover
+	&-6
+		// background-color: #BB36A7
+		background: url(../img/img-6.jpg) center center no-repeat
+		background-size: cover
+	
+//iPad 
+@media (max-width: 768px) and (min-width: 376px)
+	.block
+		margin: 0
+		&-2
+			height: 7rem
+			order: 1
+			flex: 0 1 30%
+			margin-bottom: 4rem
+		&-6
+			height: 7rem
+			order: 2
+			flex: 0 1 68%	
+			margin-bottom: 4rem		
+		&-1
+			height: 25rem
+			order: 3
+			flex: 0 1 100%
+			margin-bottom: 4rem
+		&-3
+			height: 15rem	
+			order: 4
+			flex: 0 1 49%
+		&-5
+			height: 15rem	
+			order: 5
+			flex: 0 1 49%
+		&-4
+			display: none	
+
+//iPhone 6 
+@media (max-width: 375px)
+	.block
+		margin: 0
+		&-3
+			height: 10rem	
+			order: 1
+			flex: 0 1 100%
+			margin-bottom: 2rem
+		&-6
+			height: 10rem
+			order: 2
+			flex: 0 1 100%	
+			margin-bottom: 1rem		
+		&-1
+			height: 25rem
+			order: 3
+			flex: 0 1 100%
+		&-2, &-4, &-5
+			display: none
+
+			
