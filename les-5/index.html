@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Evgeny Gavrushov">
+		<link rel="icon" href="../../../../favicon.ico">
+		<title>Project</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<!-- Reset CSS -->
+		<link rel="stylesheet" href="css/reset.css">
+		
+		<!-- Custom styles for this template -->
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<!-- Таблица с краткими данными по счетам -->
+			<div class="btn btn-primary">Новый счёт</div>
+			<div class="row bg-info">
+				<div class="col-2 border border-primary column-name">
+					Тип счета
+				</div>
+				<div class="col-2 border border-primary column-name">
+					Владелец счета
+				</div>
+				<div class="col-2 border border-primary column-name">
+					Баланс
+				</div>
+				<div class="col-2 border border-primary column-name">
+					Срок действия
+				</div>
+				<div class="col-4  border border-primary btn-block">
+					
+				</div>
+			</div>
+			<div class="row bg-secondary">
+				<div class="col-2 border border-primary column-name">
+					-
+				</div>
+				<div class="col-2 border border-primary column-name">
+					-
+				</div>
+				<div class="col-2 border border-primary column-name">
+					-
+				</div>
+				<div class="col-2 border border-primary column-name">
+					-
+				</div>
+				<div class="col-4  border border-primary btn-block">
+					<div class="btn btn-primary">
+						Подробная информация
+					</div>
+					<div class="btn btn-primary">
+						Редактировать
+					</div>
+					<div class="btn btn-primary">
+						Удалить
+					</div>
+				</div>
+			</div>
+
+			<!-- Полная информация -->
+			<div class="row  full-info">
+				<div class="col-4 bg-info full-info__block">
+					<p>Подробная информация о счете</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Тип счета</div>
+				<div class="col-2 bg-secondary full-info__block">Расчетный</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Номер счета</div>
+				<div class="col-2 bg-secondary full-info__block">№ 222</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">PIN</div>
+				<div class="col-2 bg-secondary full-info__block">123</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Баланс</div>
+				<div class="col-2 bg-secondary full-info__block">100р</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Дата создания счета</div>
+				<div class="col-2 bg-secondary full-info__block">15.05.18</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Владелец</div>
+				<div class="col-2 bg-secondary full-info__block">Петров Петр Петрович</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Тип пользователя</div>
+				<div class="col-2 bg-secondary full-info__block">Активный</div>
+			</div>
+			<!-- Накопительный -->
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Тип вклада</div>
+				<div class="col-2 bg-secondary full-info__block">Валютный</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Минимальная сумма</div>
+				<div class="col-2 bg-secondary full-info__block">100р</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Размер % по вкладу</div>
+				<div class="col-2 bg-secondary full-info__block">3%</div>
+			</div>
+			<!-- Расчетный счет -->
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Валюта счета</div>
+				<div class="col-2 bg-secondary full-info__block">Белки</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Срок действия карты</div>
+				<div class="col-2 bg-secondary full-info__block">2 года</div>
+			</div>
+			<div class="row">
+				<div class="col-2 bg-secondary full-info__block">Покрытие</div>
+				<div class="col-2 bg-secondary full-info__block">РБ</div>
+			</div>
+
+			<!-- Новый счет -->
+			<div class="row  new-account">
+				<div class="col-6 bg-info new-account__block">
+					<p>Новый счет</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 bg-secondary new-account__block">
+					<form action="">
+						<div class="select-block">
+							<p>Тип счета</p>
+							<select required name="typeOfCard" id="typeOfCard">
+								<option value="">Расчетный</option>
+								<option value="">Накопительный</option>
+							</select>
+						</div>
+						<div class="row inputs">
+							<label for="numberOfcard">№ Счета</label>
+							<input required id="numberOfcard" type="number">
+						</div>
+						<div class="row inputs">
+							<label for="pin">PIN</label>
+							<input required id="pin" type="number">
+						</div>
+						<div class="row inputs">
+							<label for="balance">Баланс</label>
+							<input required id="balance" type="number">
+						</div>
+						<div class="row inputs">
+							<label for="dateOfcreate">Дата открытия счета</label>
+							<input required id="dateOfcreate" type="date">
+						</div>
+						<div class="row inputs">
+							<label for="owner">Владелец</label>
+							<input required id="owner" type="text">
+						</div>
+						<div class="select-block">
+							<p>Тип пользователя</p>
+							<select required name="typeOfUser" id="typeOfUser">
+								<option value="">Активный</option>
+								<option value="">Заблокирован</option>
+							</select>
+						</div>
+						<!-- расчетный счет -->
+						<div class="checking-account">
+							<div class="select-block">
+								<p>Валюта</p>
+								<select required name="typeOfMoney" id="typeOfMoney">
+									<option value="">Доллары</option>
+									<option value="">Рос рубль</option>
+									<option value="">Белки</option>
+								</select>
+							</div>
+							<div class="row inputs">
+								<label for="dateOfend">Срок действия карты</label>
+								<input required id="dateOfend" type="date">
+							</div>
+							<div class="select-block">
+								<p>Валюта</p>
+								<select required name="location" id="location">
+									<option value="">РБ</option>
+									<option value="">Планета Земля</option>
+								</select>
+							</div>
+						</div>
+						<!-- Накопительный счет -->
+						<div class="savings-account">
+							<div class="select-block">
+								<p>Тип вклада</p>
+								<select required name="typeOfDeposit" id="typeOfDeposit">
+									<option value="">Валютный</option>
+									<option value="">Белочный</option>
+								</select>
+							</div>
+							<div class="select-block">
+								<p>Размер % по вкладу</p>
+								<select required name="percent" id="percent">
+									<option value="">3%</option>
+									<option value="">5%</option>
+									<option value="">7%</option>
+								</select>
+							</div>
+							<div class="select-block">
+								<p>Минимальная сумма вклада</p>
+								<select required name="minDeposit" id="minDeposit">
+									<option value="">100р</option>
+									<option value="">200р</option>
+									<option value="">300р</option>
+									<option value="">400р</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div> <!-- Container -->
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

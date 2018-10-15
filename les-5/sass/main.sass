@@ -1,0 +1,44 @@
+=center() 
+	display: flex
+	justify-content: center
+	align-items: center
+
+html, body
+	font-size: 10px
+.column-name
+	+center
+.btn
+	height: 2.5rem
+.btn-block
+	display: flex
+	align-items: center
+	justify-content: space-around
+
+.full-info
+	margin-top: 3rem
+	&__block
+		+center
+		border: 1px solid black
+.new-account
+	margin-top: 3rem
+	&__block
+		+center
+form
+	width: 100%			
+.select-block
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	margin-top: 1rem
+	p
+		margin-right: 1rem
+.inputs
+	display: flex
+	padding-left: 1.5rem
+	margin-top: 1rem
+input:focus
+	outline: none
+select:focus
+	outline: none	
+label
+	margin-right: 1rem
